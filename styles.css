@@ -32,6 +32,18 @@ section {
     border-radius: 8px; /* заокруглення країв */
 }
 
+#bio {
+    overflow: auto; 
+}
+
+/* 
+.float-image {
+    float: left;         
+    margin-right: 15px;    
+    width: 200px;           
+    height: auto;        
+} */
+
 section a{
     color: black;
     text-decoration: none;
