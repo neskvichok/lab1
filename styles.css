@@ -37,6 +37,11 @@ section a{
     text-decoration: none;
 }
 
+section a b{
+    color: black;
+    text-decoration: underline;
+}
+
 table {
     width: 100%;
     border-collapse: collapse; /* забирає відступи між клітинками */
