@@ -10,37 +10,32 @@ body {
 header {
     background-color: #333;
     color: white;
-    padding: 10px 0;
+    padding: 10px;
     text-align: center;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
+header ul li {
     display: inline;
     margin-right: 15px;
 }
 
-header nav ul li a {
+header ul li a {
     color: white;
-    text-decoration: none;
+    text-decoration: none; /* щоб забрати підкреслення */
 }
 
 
 section {
-    padding: 20px;
-    margin: 20px;
+    padding: 20px;  /* внутрішні відступи */ 
+    margin: 20px; /* зовнішні відступи */ 
     background-color: white;
-    border-radius: 8px;
+    border-radius: 8px; /* заокруглення країв */
 }
 
 table {
     width: 100%;
-    border-collapse: collapse;
-}
+    border-collapse: collapse; /* забирає відступи між клітинками */
+} 
 
 table th, table td {
     border: 1px solid #ddd;
@@ -53,8 +48,12 @@ table th {
 }
 
 
-video, audio {
+ audio {
     display: block;
-    margin: 20px 0;
+    margin: 20px;
     max-width: 100%;
+}
+
+video {
+    max-width: 20%;
 }
