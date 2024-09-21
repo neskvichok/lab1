@@ -32,6 +32,11 @@ section {
     border-radius: 8px; /* заокруглення країв */
 }
 
+section a{
+    color: black;
+    text-decoration: none;
+}
+
 table {
     width: 100%;
     border-collapse: collapse; /* забирає відступи між клітинками */
