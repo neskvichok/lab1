@@ -1,16 +1,25 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.3;
+    padding-top: 110px;
     background-color: #f4f4f4;
+}
+
+html {
+    scroll-padding-top: 120px;
 }
 
 
 header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    position: fixed;
     background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 0px;
     text-align: center;
 }
 
@@ -19,47 +28,61 @@ header ul li {
     margin-right: 15px;
 }
 
+header ul li :hover {
+    color: black;
+    text-decoration: underline;
+}
+
 header ul li a {
     color: white;
-    text-decoration: none; /* щоб забрати підкреслення */
+    text-decoration: none;
+    /* щоб забрати підкреслення */
 }
 
 
+section p {
+    text-indent: 20px;
+}
+
 section {
-    padding: 20px;  /* внутрішні відступи */ 
-    margin: 20px; /* зовнішні відступи */ 
+    padding: 10px 60px 25px 40px;
+    /* внутрішні відступи */
+    margin: 40px;
+    /* зовнішні відступи */
     background-color: white;
-    border-radius: 8px; /* заокруглення країв */
+    border-radius: 10px;
+    /* заокруглення країв */
 }
 
 #bio {
-    overflow: auto; 
+    overflow: auto;
 }
 
-/* 
-.float-image {
-    float: left;         
-    margin-right: 15px;    
-    width: 200px;           
-    height: auto;        
-} */
 
-section a{
-    color: black;
+
+.float-image {
+    float: left;
+    margin-right: 15px;
+}
+
+section a {
+    color: rgb(83, 83, 90);
     text-decoration: none;
 }
 
-section a b{
+section a b {
     color: black;
     text-decoration: underline;
 }
 
 table {
     width: 100%;
-    border-collapse: collapse; /* забирає відступи між клітинками */
-} 
+    border-collapse: collapse;
+    /* забирає відступи між клітинками */
+}
 
-table th, table td {
+table th,
+table td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
@@ -69,8 +92,7 @@ table th {
     background-color: #f2f2f2;
 }
 
-
- audio {
+audio {
     display: block;
     margin: 20px;
     max-width: 100%;
@@ -78,4 +100,37 @@ table th {
 
 video {
     max-width: 20%;
+}
+
+
+#support ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#support li {
+    margin: 15px 0;
+    /* Відступи між пунктами */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#support li:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-2px);
+    /* Легкий підйом при наведенні */
+}
+
+#support a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+
+
+footer {
+    text-align: center;
 }
